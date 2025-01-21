@@ -1,0 +1,10 @@
+id = "brave-search-context-server"
+name = "Brave Search Context Server"
+description = "Model Context Server for Brave Search API"
+version = "0.0.1"
+schema_version = 1
+authors = ["Reece Holmdahl <r@holmdahl.io>"]
+repository = "https://github.com/reecelikesramen/brave-search-context-server"
+
+[context_servers.brave-search-context-server]
+name = "Brave Search Context Server"
