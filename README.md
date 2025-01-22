@@ -1,6 +1,6 @@
 # Zed Brave Search Context Server
 
-This extension provides a Model Context Server for Brave Search, for use with the Zed AI assistant.
+This extension provides a Model Context Server for Brave Search, for use with the Zed AI assistant. It leverages [this MCP server](https://github.com/modelcontextprotocol/servers/tree/main/src/brave-search).
 
 It adds `/brave_web_search` and `/brave_local_search` slash commands to the Assistant Panel.
 
