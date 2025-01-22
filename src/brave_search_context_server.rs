@@ -29,9 +29,9 @@ impl zed::Extension for BraveSearchContextServerExtension {
             zed::npm_install_package(PACKAGE_NAME, PACKAGE_VERSION)?;
         }
 
-        let settings = ContextServerSettings::for_project("brave-search-context-server", project)?;
+        let settings = ContextServerSettings::for_project("brave_search", project)?;
         let Some(settings) = settings.settings else {
-            return Err("missing `brave_search_api_key` setting".into());
+            return Err("missing `brave_api_key` setting".into());
         };
         let settings: BraveSearchContextServerSettings =
             serde_json::from_value(settings).map_err(|e| e.to_string())?;
